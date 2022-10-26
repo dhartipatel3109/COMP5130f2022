@@ -1,0 +1,95 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+
+
+.main{
+	height: 80vh;
+}
+
+.my-info{
+	margin-left: 10%;
+	padding-top: 20%;
+	position: absolute;
+}
+
+.my-info h1{
+	font-size: 40px;
+	margin-bottom: 20px;
+}
+
+.my-img{
+	width: 45%;
+	height: 80%;
+	position: relative;
+	padding-left: 80%;
+	padding-top: 10%;
+}
+
+.my-img img{
+	height: 100%;
+	position: absolute;
+	bottom: 50px;
+	left: 50%;
+	transform: translateX(-50%);
+	transition: bottom 1s, left 1s;
+}
+
+.my-img:hover .back-shape{
+	bottom: 40px;
+}
+
+.my-img:hover .me{
+	left: 45%;
+}
+
+table {
+  	border: 1px solid;
+}
+
+th{
+	background-color: orange;
+  	color: white;
+}
+
+th, td {
+  	padding: 8px;
+  	text-align: center;
+  	border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+	background-color: orange;
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+
+
+
