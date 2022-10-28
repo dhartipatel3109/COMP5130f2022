@@ -1,0 +1,1 @@
+I have used pythonanywhere server for that I have attached app.py file which is used for storing a data and also attached a snapshot of database.
