@@ -1,0 +1,35 @@
+package com.example.demo.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.example.demo.model.User;
+import com.example.demo.repository.UserRepository;
+
+@Service
+public class UserServiceImpl implements UserService {
+	// Logger logger = LoggerFactory.getLogger(UserServiceImpl.class);
+
+	@Autowired
+	private UserRepository userRepository;
+
+	@Override
+	public User saveUser(User user) {
+		return userRepository.save(user);
+	}
+
+	@Override
+	public boolean isValidUser(String userName, String userPass) {
+		User user = userRepository.findByUserName(userName);
+		String username = user.getUserName();
+		String password = user.getPassword();
+		// String role = user.getRole();
+
+		// logger.info("User Detail: " + user);
+
+		if (username.equals(userName) && password.equals(userPass))
+			return true;
+		return false;
+	}
+
+}
