@@ -4,7 +4,7 @@ Admin: Id- admin123@gmail.com
  IT- id-it@uml.edu password-It@123
       id-gps@uml.edu password-Gps@123
       id-transport@uml.edu password-Transport@123
-      id-Library@uml.edu password-Library@123
+      id-library@uml.edu password-Library@123
  Department information is in Admin panel like department ID password.
 
 Name : Dharti Patel
